@@ -1,0 +1,4 @@
+[submodule "themes/next/source/lib/canva-nest"]
+    path = themes/next/source/lib/canva-nest
+    url = git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest
+

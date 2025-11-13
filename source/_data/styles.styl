@@ -23,6 +23,18 @@ body {
 	background-size: cover// 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小
 }
 
+/* 添加遮罩层 */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4); /* 白色半透明蒙版 */
+  z-index: -1; /* 放到最底层 */
+}
+
 //超链接颜色调整
 a:not(.btn){
   //color: #0000FF; //超链接显示颜色
